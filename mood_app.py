@@ -89,7 +89,7 @@ def access_mood():
         moods = mood.get_moods(user_id)
         if moods is not False:
             # have to unwrap list of tuples format
-            return make_response(jsonify({'moods': [mood[0] for mood in moods] or "No moods found"}))
+            return make_response(jsonify({'moods': [md[0] for md in moods] or "No moods found"}))
         else:
             abort(500)
 
