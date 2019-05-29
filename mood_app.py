@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3.6
 
 from flask import Flask, jsonify, request, make_response, abort
 from constants import Urls
